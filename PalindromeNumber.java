@@ -3,7 +3,7 @@ package Basics.Important;
 public class PalindromeNumber {
     public static void main(String[] a)
     {
-        int number = 121;
+        int number = 212;
         System.out.println("Checking whether the number is palindrome or not");
        boolean palindrome = checkPalindrome(number);
         System.out.println((palindrome)?"Its a palindrome":"Not a palindrome");
@@ -20,6 +20,9 @@ public class PalindromeNumber {
             rev = (rev*10) + last;
             num/=10;
         }
-        return true;
+        if(rev == num)
+            return true;
+        else
+            return false;
     }
 }
