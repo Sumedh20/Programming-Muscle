@@ -1,12 +1,15 @@
 package Basics.Important;
 
+import java.util.Scanner;
+
 public class NumDigitEqual
 {
     public static void main(String[] a)
     {
         System.out.println("Checking number of digits = sum of digit");
-        int num = 20102;
-
+        //int num = 20102;
+        Scanner s = new Scanner(System.in);
+        int num = s.nextInt();
         checkDigit(num);
     }
 
